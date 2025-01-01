@@ -1,0 +1,18 @@
+[submodule "bin/mobile"]
+	path = bin/mobile
+	url = https://github.com/lang-assist/mobile.git
+[submodule "bin/admin-web"]
+	path = bin/admin-web
+	url = https://github.com/lang-assist/admin-web.git
+[submodule "bin/server"]
+	path = bin/server
+	url = https://github.com/lang-assist/server.git
+[submodule "lib/gql"]
+	path = lib/gql
+	url = https://github.com/lang-assist/gql.git
+[submodule "design"]
+	path = design
+	url = https://github.com/lang-assist/design.git
+[submodule "docs"]
+	path = docs
+	url = https://github.com/lang-assist/docs.git

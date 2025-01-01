@@ -28,3 +28,9 @@
 [submodule "lib/admin-data"]
 	path = lib/admin-data
 	url = https://github.com/lang-assist/admin-data.git
+[submodule "lib/sign"]
+	path = lib/sign
+	url = https://github.com/Mehmetyaz/sign.git
+[submodule "lib/sign_flutter"]
+	path = lib/sign_flutter
+	url = https://github.com/Mehmetyaz/sign_flutter.git

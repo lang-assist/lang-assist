@@ -46,9 +46,32 @@ Ana proje repository'si: https://github.com/lang-assist/lang-assist
    - Teknolojiler: Markdown, Mermaid, Drawio
    - Repository: https://github.com/lang-assist/docs
 
+6. Flutter API (./lib/flutter-api/):
+   - Flutter uygulamaları için GraphQL API base utilities
+   - Teknolojiler: Flutter, Dart, GraphQL
+   - Repository: https://github.com/lang-assist/flutter-api
+
+7. Flutter Utils (./lib/flutter-utils/):
+   - Flutter uygulamaları için genel utility fonksiyonları
+   - Teknolojiler: Flutter, Dart
+   - Repository: https://github.com/lang-assist/flutter-utils
+
+8. User Data Layer (./lib/user-data/):
+   - Kullanıcı verilerini modellerini içeren data layer
+   - Teknolojiler: Flutter, Dart, GQL Codegen
+   - Repository: https://github.com/lang-assist/user-data
+
+9. Admin Data Layer (./lib/admin-data/):
+   - Admin verilerini modellerini içeren data layer
+   - Teknolojiler: Flutter, Dart, GQL Codegen
+   - Repository: https://github.com/lang-assist/admin-data
+
 Terminal olarak Windows PowerShell kullanıyorsun, komutlarında buna dikkat et. Git komutları için gerekmedikçe "git" yerine "gh" kullan.
 
 Main branch name is "main".
 
 Github organization name is "lang-assist".
 
+Google Cloud Project id is "lang-assist-25".
+
+Google Cloud Storage bucket name is "lang-assist-25".

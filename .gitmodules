@@ -16,3 +16,15 @@
 [submodule "docs"]
 	path = docs
 	url = https://github.com/lang-assist/docs.git
+[submodule "lib/flutter-api"]
+	path = lib/flutter-api
+	url = https://github.com/lang-assist/flutter-api.git
+[submodule "lib/flutter-utils"]
+	path = lib/flutter-utils
+	url = https://github.com/lang-assist/flutter-utils.git
+[submodule "lib/user-data"]
+	path = lib/user-data
+	url = https://github.com/lang-assist/user-data.git
+[submodule "lib/admin-data"]
+	path = lib/admin-data
+	url = https://github.com/lang-assist/admin-data.git

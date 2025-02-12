@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/bin/mobile/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/bin/mobile/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/bin/mobile/build" />
+      <excludeFolder url="file://$MODULE_DIR$/bin/mobile/windows/flutter/ephemeral/.plugin_symlinks/connectivity_plus/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/bin/mobile/windows/flutter/ephemeral/.plugin_symlinks/connectivity_plus/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/bin/mobile/windows/flutter/ephemeral/.plugin_symlinks/connectivity_plus/build" />
+      <excludeFolder url="file://$MODULE_DIR$/bin/mobile/windows/flutter/ephemeral/.plugin_symlinks/connectivity_plus/example/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/bin/mobile/windows/flutter/ephemeral/.plugin_symlinks/connectivity_plus/example/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/bin/mobile/windows/flutter/ephemeral/.plugin_symlinks/connectivity_plus/example/build" />
+      <excludeFolder url="file://$MODULE_DIR$/bin/mobile/windows/flutter/ephemeral/.plugin_symlinks/file_selector_windows/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/bin/mobile/windows/flutter/ephemeral/.plugin_symlinks/file_selector_windows/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/bin/mobile/windows/flutter/ephemeral/.plugin_symlinks/file_selector_windows/build" />
+      <excludeFolder url="file://$MODULE_DIR$/bin/mobile/windows/flutter/ephemeral/.plugin_symlinks/file_selector_windows/example/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/bin/mobile/windows/flutter/ephemeral/.plugin_symlinks/file_selector_windows/example/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/bin/mobile/windows/flutter/ephemeral/.plugin_symlinks/file_selector_windows/example/build" />
+      <excludeFolder url="file://$MODULE_DIR$/bin/mobile/windows/flutter/ephemeral/.plugin_symlinks/image_picker_windows/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/bin/mobile/windows/flutter/ephemeral/.plugin_symlinks/image_picker_windows/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/bin/mobile/windows/flutter/ephemeral/.plugin_symlinks/image_picker_windows/build" />
+      <excludeFolder url="file://$MODULE_DIR$/bin/mobile/windows/flutter/ephemeral/.plugin_symlinks/image_picker_windows/example/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/bin/mobile/windows/flutter/ephemeral/.plugin_symlinks/image_picker_windows/example/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/bin/mobile/windows/flutter/ephemeral/.plugin_symlinks/image_picker_windows/example/build" />
+      <excludeFolder url="file://$MODULE_DIR$/bin/mobile/windows/flutter/ephemeral/.plugin_symlinks/just_audio_windows/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/bin/mobile/windows/flutter/ephemeral/.plugin_symlinks/just_audio_windows/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/bin/mobile/windows/flutter/ephemeral/.plugin_symlinks/just_audio_windows/build" />
+      <excludeFolder url="file://$MODULE_DIR$/bin/mobile/windows/flutter/ephemeral/.plugin_symlinks/package_info_plus/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/bin/mobile/windows/flutter/ephemeral/.plugin_symlinks/package_info_plus/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/bin/mobile/windows/flutter/ephemeral/.plugin_symlinks/package_info_plus/build" />
+      <excludeFolder url="file://$MODULE_DIR$/bin/mobile/windows/flutter/ephemeral/.plugin_symlinks/package_info_plus/example/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/bin/mobile/windows/flutter/ephemeral/.plugin_symlinks/package_info_plus/example/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/bin/mobile/windows/flutter/ephemeral/.plugin_symlinks/package_info_plus/example/build" />
+      <excludeFolder url="file://$MODULE_DIR$/bin/mobile/windows/flutter/ephemeral/.plugin_symlinks/path_provider_windows/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/bin/mobile/windows/flutter/ephemeral/.plugin_symlinks/path_provider_windows/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/bin/mobile/windows/flutter/ephemeral/.plugin_symlinks/path_provider_windows/build" />
+      <excludeFolder url="file://$MODULE_DIR$/bin/mobile/windows/flutter/ephemeral/.plugin_symlinks/path_provider_windows/example/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/bin/mobile/windows/flutter/ephemeral/.plugin_symlinks/path_provider_windows/example/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/bin/mobile/windows/flutter/ephemeral/.plugin_symlinks/path_provider_windows/example/build" />
+      <excludeFolder url="file://$MODULE_DIR$/bin/mobile/windows/flutter/ephemeral/.plugin_symlinks/record_windows/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/bin/mobile/windows/flutter/ephemeral/.plugin_symlinks/record_windows/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/bin/mobile/windows/flutter/ephemeral/.plugin_symlinks/record_windows/build" />
+      <excludeFolder url="file://$MODULE_DIR$/bin/mobile/windows/flutter/ephemeral/.plugin_symlinks/shared_preferences_windows/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/bin/mobile/windows/flutter/ephemeral/.plugin_symlinks/shared_preferences_windows/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/bin/mobile/windows/flutter/ephemeral/.plugin_symlinks/shared_preferences_windows/build" />
+      <excludeFolder url="file://$MODULE_DIR$/bin/mobile/windows/flutter/ephemeral/.plugin_symlinks/shared_preferences_windows/example/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/bin/mobile/windows/flutter/ephemeral/.plugin_symlinks/shared_preferences_windows/example/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/bin/mobile/windows/flutter/ephemeral/.plugin_symlinks/shared_preferences_windows/example/build" />
+      <excludeFolder url="file://$MODULE_DIR$/lib/flutter-api/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/lib/flutter-api/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/lib/flutter-api/build" />
+      <excludeFolder url="file://$MODULE_DIR$/lib/flutter-utils/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/lib/flutter-utils/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/lib/flutter-utils/build" />
+      <excludeFolder url="file://$MODULE_DIR$/lib/sign/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/lib/sign/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/lib/sign/build" />
+      <excludeFolder url="file://$MODULE_DIR$/lib/sign_flutter/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/lib/sign_flutter/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/lib/sign_flutter/build" />
+      <excludeFolder url="file://$MODULE_DIR$/lib/sign_flutter/example/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/lib/sign_flutter/example/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/lib/sign_flutter/example/build" />
+      <excludeFolder url="file://$MODULE_DIR$/lib/user-data/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/lib/user-data/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/lib/user-data/build" />
+      <excludeFolder url="file://$MODULE_DIR$/tools/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/tools/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/tools/build" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Dart SDK" level="project" />
+    <orderEntry type="library" name="Dart Packages" level="project" />
+  </component>
+</module>

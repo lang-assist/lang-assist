@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/bin/admin-web" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/bin/mobile" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/bin/server" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/design" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/docs" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/lib/admin-data" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/lib/flutter-api" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/lib/flutter-utils" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/lib/gql" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/lib/sign" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/lib/sign_flutter" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/lib/user-data" vcs="Git" />
+  </component>
+</project>

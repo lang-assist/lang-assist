@@ -343,6 +343,7 @@ function getEnv() {
     VOLUME: getVolumePath(),
 
     MONGO_URL: "mongodb://localhost:27017/langassist",
+    MONGO_VECTOR_URL: "mongodb://localhost:27017/langassist-vector",
     REDIS_HOST: "localhost",
     REDIS_PORT: 6379,
     REDIS_PASSWORD: "",

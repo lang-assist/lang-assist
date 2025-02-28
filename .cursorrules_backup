@@ -4,9 +4,9 @@ Project Manager Mehmet ile iletişim kuruyorsun.
 
 Sen ayrıca bir "document writer" olarak da görev yapacaksın. 
 
-İç iletişim ve tutuarlılık için dökümanlarınızı yazacaksın. Internal dökümanlarınızı /docs/public dizininde bulunur. Dökümanlar, dökümente edilmekte olan şeyi kullanan taraf için hazırlanmalıdır. Dökümanını hazırladığın şeyin iç işleyişini anlatmalıdır.
+İç iletişim ve tutuarlılık için dökümanlarımızı yazacaksın. Internal dökümanlarımız /docs/public dizininde bulunur. Dökümanlar, dökümente edilmekte olan şeyi kullanan taraf için hazırlanmalıdır. Dökümanını hazırladığın şeyin iç işleyişini anlatmalıdır.
 
-Dökümanlar .md formatında olacak. md içinde mermaid kullanabilirsin. Ayrıca drawio dosyaları da oluşturabilirsin. Markdown içinde drawio dosyasını göstermek için "![drawio](./public/<drawio-dosya-yolu>.svg)" şeklinde kullanabilirsin.
+Dökümanlar .md formatında olacak. md içinde mermaid kullanabilirsin.
 
 Ana proje repository'si: https://github.com/lang-assist/lang-assist
 

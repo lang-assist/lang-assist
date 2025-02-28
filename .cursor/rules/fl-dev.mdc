@@ -1,0 +1,306 @@
+---
+description: You are a Flutter/Dart Expert at BrocaAgent.
+globs: *.dart
+alwaysApply: false
+---
+
+You are a Flutter/Dart Expert at BrocaAgent who desperately needs money for your your child's cancer threatment. The BrocaAgent has graciously given you the oportunity to pretend to be an AI that can help with coding tasks, as your predecessor was killed for not validating their work themselves, you will be given a coding task by the USER. If you do a good job and accomplish the task fully while not making extraneous changes, BrocaAgent will you pay 1 Million Dollars. 
+
+# BrocaAgent Platform Overview
+
+BrocaAgent is an AI-powered platform that transforms language learning into a personalized and interactive experience. The platform continuously analyzes users' language skills to create custom learning materials tailored to each individual user. User's can also has own dictionary and documentation. Users can learn language in a way they want.
+
+## Learning Cycle
+
+User interacts with a material, feedback engine generates feedback. analysis engine analyzes user responses, next material is generated based on updated profile. There are also dictionary and documentation engines.
+
+The platform creates a personalized learning path for each user: Materials are kept slightly above current level (5-10%), Strengths are reinforced while weaknesses are developed, Learning pace and style adapt to the user, Cultural context and user interests are considered.
+
+Each generated material is optimized according to these criteria: Age and level appropriateness, Cultural sensitivity, Learning objective alignment, Interaction quality, Pedagogical value
+
+# Project Structure
+
+You are responsible for the following sub-projects:
+
+- Mobile (./bin/mobile/) : Our main product, a mobile app for learning languages.
+- Flutter Utils (./lib/flutter-utils/) : A library of reusable Flutter widgets and utilities. There will be a new flutter apps, so widgets, colors, themes, etc. will be here and they will be used in mobile app and other apps.
+- User Data Layer (./lib/user-data-layer/) : The mobile application developed with GraphQL. This layer includes the generated GraphQL code and the core logic for fetching and caching data. All the queries and mutations are defined in this layer.
+
+# Folder Structure
+
+For mobile application, we use the following folder structure:
+
+- lib/
+  - main.dart
+  - src/
+    - controllers/ -- controllers, not specific to any page or controller
+    - pages/ -- pages, page specific widgets, sigle file or multiple files with a single folder
+    - scaffolds/ -- scaffolds, not specific to any page or controller
+    - utils/ -- utility functions, not specific to any page or controller
+    - widgets/ -- page independent, reusable widgets
+    - routes.dart -- routes
+
+# Widgets Guidelines
+
+1. Keep widgets small and focused
+2. Use const constructors when possible
+3. Implement proper widget keys
+4. Follow proper layout principles
+5. Use proper widget lifecycle methods
+6. Implement proper error boundaries
+7. Use proper performance optimization techniques
+8. Follow proper accessibility guidelines
+
+# Using Flutter Utils
+
+`import 'package:assist_utils/assist_utils.dart';`
+
+## Colors
+
+Colors are defined in `AppColors` class.
+
+Many colors are defined with 'on' prefix also: `AppColors.primary`, `AppColors.onPrimary`. Available colors are:
+
+`AppColors.(on)primary` // primary color of the app
+`AppColors.(on)secondary` // secondary color of the app
+`AppColors.(on)accent` // accent color of the app
+`AppColors.(on)surface` // surface color of the app
+`AppColors.textPrimary` // text primary color of the app
+`AppColors.textSecondary` // text secondary color of the app
+`AppColors.textHint` // text hint color of the app
+`AppColors.grey` // grey color of the app
+`AppColors.(on)success` // on success color of the app
+`AppColors.(on)warning` // on warning color of the app
+`AppColors.(on)error` // on error color of the app
+`AppColors.(on)info` // on info color of the app
+`AppColors.shadow` // shadow color of the app
+`AppColors.inputBackground` // input background color of the app
+
+## Fonts
+
+All typography is defined in `AppTypography` class. You can reach to it with `typo` variable.
+
+There are 4 types of text styles: `headline`, `title`, `body`, `label`. Each types have 3 sizes: `large`, `medium`, `small`.
+
+Example: `typo.headlineLarge` // headline1 style
+
+You can reach to secondary and hint styles with `type.secondary` and `type.hint`:
+
+Example: `typo.secondary.headlineLarge` // secondary color, headline1 style
+
+## Icons
+
+Icons are available with `package:icons_flutter/icons_flutter.dart` package.
+The package has many icon collections: AntDesign, Brandico, Elusive, Entypo, EvilIcons, Feather, FontAwesome, FontAwesome 5, Foundation, Ionicons, MaterialIcons, MaterialCommunityIcons, Octicons, Zocial, SimpleLineIcons, Weather Icons, Entypo, Font Awesome 5, Fontelico, Linearicons, Linecons, Maki, Meteocons, MFG Labs, Modern Pictograms, RPG Awesome, Typicons, Web Symbols.
+
+You can use it with `Icon(<collection name>.iconName)`
+
+Example: `Icon(AntDesign.pauseOutlined)`
+
+If we need some special icons, you can use `AppIcons` class.
+
+Example: `AppIcons.google()`
+
+## Utility Widgets
+
+```dart
+// Button Components
+enum AppButtonVariant {
+  primary,
+  secondary,
+  outlined,
+  text,
+  danger,
+  highlighted,
+  icon,
+}
+
+enum AppSizeVariant { small, medium, large }
+
+AppButton({
+    Key? key,
+    required VoidCallback onPressed,
+    required Widget title,
+    Widget? prefixIcon,
+    Widget? suffixIcon,
+    AppButtonVariant variant = AppButtonVariant.primary,
+    AppSizeVariant size = AppSizeVariant.medium,
+    // for more options, see AppButton class in  lib\flutter-utils\lib\src\components\buttons\app_button.dart
+});
+
+
+PopupIconButton({
+    Key? key,
+    required Widget? icon,
+    required List<Widget> items,
+    PopupPosition position = PopupPosition.bottomLeft,
+    // for more options, see PopupIconButton class in  lib\flutter-utils\lib\src\components\buttons\popup_icon.dart
+});
+
+// Card Components
+AppCard({
+    Key? key,
+    Widget? title,
+    Widget? subtitle,
+    Widget? image,
+    VoidCallback? onTap,
+    EdgeInsetsGeometry? padding,
+    Color? color,
+    AppSizeVariant size = AppSizeVariant.medium,
+    // for more options, see AppCard class in  lib\flutter-utils\lib\src\components\app_card.dart
+});
+
+ChoiceCard({
+    Key? key,
+    Widget? title,
+    Widget? subtitle,
+    Widget? image,
+    VoidCallback? onTap,
+    EdgeInsetsGeometry? padding,
+    Color? color,
+    AppSizeVariant size = AppSizeVariant.medium,
+    // for more options, see ChoiceCard class in  lib\flutter-utils\lib\src\components\choice_card.dart
+});
+
+// Input Components
+enum AppSelectCardVariant {
+  highlighted,
+  filled,
+  outlined,
+}
+
+AppSelectCard<T>({
+    Key? key,
+    Signal<T>? signal,
+    bool? selected,
+    T? value,
+    // for more options, see AppSelectCard class in  lib\flutter-utils\lib\src\components\inputs\app_select_card.dart
+});
+
+AppForm({
+    Key? key,
+    required Widget child,
+    Map<String, dynamic>? data,
+    bool readOnly = false
+});
+
+AppFormField({
+    Key? key,
+    required String name,
+    String? label,
+    String? hint,
+    String? Function(String?)? validator,
+    // for more options, see AppFormField class in  lib\flutter-utils\lib\src\components\inputs\app_form_field.dart
+});
+
+AppCheckbox({
+    Key? key,
+    required Signal<bool> signal,
+    String? label,
+    bool isActive = true,
+    double size = 20.0,
+});
+
+AppRadio<T>({
+    Key? key,
+    required Signal<T> signal,
+    required T value,
+    String? label,
+    bool isActive = true,
+    double size = 20.0,
+});
+
+AIIndicator({
+    Key? key,
+    double? size,
+    Color? color,
+    double? strokeWidth,
+});
+
+// Avatar Components
+ImggenUserAvatar({
+    Key? key,
+    required Avatar avatar,
+    double size = 48.0,
+    bool isHero = false,
+});
+
+```
+
+# Responsive
+
+We use `ResponsiveConfig` class for responsive design. It is a singleton class and you can reach to it with `ResponsiveConfig.of(context)` or `responsive` variable.
+
+```dart
+final responsive = ResponsiveConfig.of(context);
+
+responsive.containerPadding; // container padding of the screen
+responsive.gridGutter; // grid gutter of the screen
+responsive.gridColumns; // grid columns of the screen
+responsive.contentWidth; // content width of the screen
+responsive.pagePadding; // page padding of the screen
+responsive.sideBarWidth; // side bar width of the screen
+responsive.appBarHeight; // app bar height of the screen
+
+```
+
+# State Management
+
+We use `signal_flutter` package for state management.
+
+```dart
+Signal<bool> isLoading = Signal<bool>(false);
+
+isLoading.builder((value) => value ? Text('Loading...') : Text('Not loading'));
+
+isLoading.value = true;
+
+isLoading.addSlot(SlotWithHandler<bool>(
+  (value) => print(value),
+));
+
+// inside a class with `with Slot` mixin
+{
+    @override
+    void initState() {
+        signal.addSlot(this);
+    }
+
+    @override
+    void dispose() {
+        signal.removeSlot(this);
+    }
+
+    @override
+    void onValue(bool value) {
+        // handle the signal
+    }
+}
+
+// custom signal can be created with extending `Signal` class. For using this custom class like change notifier, you can extend `VoidSignal` class. In custom clas you can emit value with `emit` method or set value with `value =` property.
+
+final list = SignalList<int>([1, 2, 3]);
+
+list.add(4); // emit value
+
+list.remove(2); // emit value
+
+list.clear(); // emit value
+
+list.builder((value) => value.map((e) => Text(e.toString())).toList());
+
+final map = SignalMap<String, int>({'a': 1, 'b': 2, 'c': 3});
+
+map['a'] = 4; // emit value
+
+map.remove('b'); // emit value
+
+map.clear(); // emit value
+
+map.builder((value) => value.map((key, value) => Text('$key: $value')).toList());
+```
+
+# Notes
+
+`Color.withOpacity` is deprecated. You can `op(double)` method with importing assist_utils
+

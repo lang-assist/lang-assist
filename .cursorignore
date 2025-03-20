@@ -2,5 +2,9 @@
 node_modules
 node_modules/
 
+.dart_tool
+.dart_tool/
+
+# Add directories or file patterns to ignore during indexing (e.g. foo/ or *.csv)
 dist
 dist/

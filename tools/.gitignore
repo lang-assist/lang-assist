@@ -16,3 +16,4 @@ test-pr
 build.tar.gz
 local-pr
 test-pr
+private.env

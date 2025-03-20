@@ -69,6 +69,30 @@
       <excludeFolder url="file://$MODULE_DIR$/tools/.dart_tool" />
       <excludeFolder url="file://$MODULE_DIR$/tools/.pub" />
       <excludeFolder url="file://$MODULE_DIR$/tools/build" />
+      <excludeFolder url="file://$MODULE_DIR$/bin/mobile/packages/api/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/bin/mobile/packages/api/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/bin/mobile/packages/api/build" />
+      <excludeFolder url="file://$MODULE_DIR$/bin/mobile/packages/gql_data/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/bin/mobile/packages/gql_data/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/bin/mobile/packages/gql_data/build" />
+      <excludeFolder url="file://$MODULE_DIR$/bin/mobile/packages/sign/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/bin/mobile/packages/sign/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/bin/mobile/packages/sign/build" />
+      <excludeFolder url="file://$MODULE_DIR$/bin/mobile/packages/sign_flutter/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/bin/mobile/packages/sign_flutter/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/bin/mobile/packages/sign_flutter/build" />
+      <excludeFolder url="file://$MODULE_DIR$/bin/mobile/packages/sign_flutter/example/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/bin/mobile/packages/sign_flutter/example/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/bin/mobile/packages/sign_flutter/example/build" />
+      <excludeFolder url="file://$MODULE_DIR$/bin/mobile/packages/utils/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/bin/mobile/packages/utils/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/bin/mobile/packages/utils/build" />
+      <excludeFolder url="file://$MODULE_DIR$/bin/mobile/tools/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/bin/mobile/tools/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/bin/mobile/tools/build" />
+      <excludeFolder url="file://$MODULE_DIR$/bin/mobile/windows/flutter/ephemeral/.plugin_symlinks/audioplayers_windows/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/bin/mobile/windows/flutter/ephemeral/.plugin_symlinks/audioplayers_windows/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/bin/mobile/windows/flutter/ephemeral/.plugin_symlinks/audioplayers_windows/build" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

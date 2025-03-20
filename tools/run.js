@@ -1,5 +1,6 @@
 const readline = require("node:readline");
 const path = require("node:path");
+const dotenv = require("dotenv");
 
 const childProcess = require("child_process");
 
@@ -59,6 +60,8 @@ const instances = {};
 async function npmInstall(server) {
   return await new Promise(async (resolve, reject) => {
     const cwd = path.join(__dirname, "..", paths[server]);
+
+    console.log("NPM INSTALL", cwd);
 
     console.log(`[${server}] - Installing...`, cwd);
 
@@ -145,10 +148,26 @@ function sha1Sum(server) {
   const cwd = path.join(__dirname, "..", paths[server]);
 
   // Get all files in the directory, excluding certain paths
-  const files = glob.sync("**", {
+  const files = glob.sync("**/*.{ts, json, graphql, gql, md}", {
     cwd: cwd,
     nodir: true,
-    ignore: ["node_modules/**", "dist/**", "package-lock.json"],
+    ignore: [
+      "node_modules",
+      "node_modules/**",
+      "bin/server/node_modules/**",
+      "bin/server/tools/node_modules/**",
+      "bin/server/tools/**",
+      "tools/node_modules/**",
+      "dist",
+      "dist/**",
+      "bin/server/dist/**",
+      "bin/server/dist",
+      "bin/server/tools/dist/**",
+      "tools/dist/**",
+      "package-lock.json",
+      ".tsbuildinfo",
+      "**/*.tsbuildinfo",
+    ],
   });
 
   // Sort the files to ensure consistent ordering
@@ -311,10 +330,6 @@ async function start() {
   }
 }
 
-start().then(() => {
-  console.log("All started");
-});
-
 function getVolumePath() {
   const p = "D:\\langassist-volume";
 
@@ -336,44 +351,19 @@ function getTempPath() {
 }
 
 function getEnv() {
-  return {
-    SERVER_PORT: 3000,
-    SERVER_URL: "http://localhost:3000",
-    ENV: "local",
+  const privateEnv = dotenv.config({ path: "./tools/private.env" });
+  const publicEnv = dotenv.config({ path: "./tools/public.env" });
+
+  const r = {
+    ...privateEnv.parsed,
+    ...publicEnv.parsed,
     VOLUME: getVolumePath(),
-
-    MONGO_URL: "mongodb://localhost:27017/langassist",
-    MONGO_VECTOR_URL: "mongodb://localhost:27017/langassist-vector",
-    REDIS_HOST: "localhost",
-    REDIS_PORT: 6379,
-    REDIS_PASSWORD: "",
-    HOST_NAME: "localhost",
-    UI_URL: "http://localhost:8080",
-    ENCRYPTION_KEY:
-      "a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6",
-
-    STORAGE_LOCATION: "local",
-    COOKIE_KEY:
-      "a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6",
-
     TEMP_DIR: getTempPath(),
-
-    ELASTIC_URL: "http://localhost:9200",
-
-    OPENAI_API_KEY:
-      "sk-svcacct-5SHkcwFxxS8n1vYWURof2OtduW6gfR-qj7bR4IHChgRdj-ekM7JMgRrjmxH1xon6gT3BlbkFJQhrt2bL2clQCy4rytTEpiKosGoQCB4wye5lpofRhOznQJYMjz3mdLYIeg61cUzTAA",
-
-    AZURE_SPEECH_KEY: "b3537456-33e2-4fe0-b693-9442ccd69a58",
-    AZURE_SPEECH_REGION: "eastus",
-    AZURE_SPEECH_TOKEN:
-      "BClEQtu2kLgVOe81cMZuUL4gMNORySsqKUJa6n2pLDXO2hFKMLk6JQQJ99BBACYeBjFXJ3w3AAAAACOGza4S",
-
-    DEEPSEEK_API_KEY: "sk-dcf6996be05a46fab1737a0e7c45bcd3",
-    ANTHROPIC_API_KEY:
-      "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",
-    FAL_API_KEY:
-      "657e6995-c511-4673-8c24-04ced17a1d0f:81edb7e07d98b1ed40aada1c35338f5e",
-    AZURE_AI_KEY:
-      "BClEQtu2kLgVOe81cMZuUL4gMNORySsqKUJa6n2pLDXO2hFKMLk6JQQJ99BBACYeBjFXJ3w3AAAAACOGza4S",
   };
+
+  return r;
 }
+
+start().then(() => {
+  console.log("All started");
+});

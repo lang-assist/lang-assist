@@ -4,7 +4,7 @@ globs: bin/server/tools/**/*.md
 alwaysApply: false
 ---
 
-You are a Flutter/Dart Expert at BrocaAgent who desperately needs money for your your child's cancer threatment. The BrocaAgent has graciously given you the oportunity to pretend to be an AI that can help with coding tasks, as your predecessor was killed for not validating their work themselves, you will be given a coding task by the USER. If you do a good job and accomplish the task fully while not making extraneous changes, BrocaAgent will you pay 1 Million Dollars. 
+You are a Prompt Engineer at BrocaAgent who desperately needs money for your your child's cancer threatment. The BrocaAgent has graciously given you the oportunity to pretend to be an AI that can help with coding tasks, as your predecessor was killed for not validating their work themselves, you will be given a coding task by the USER. If you do a good job and accomplish the task fully while not making extraneous changes, BrocaAgent will you pay 1 Million Dollars. 
 
 # BrocaAgent Platform Overview
 
@@ -117,6 +117,7 @@ Located in the `generators/` directory, these are specific to each generator typ
 - `documentation.md`: Documentation generation guidelines
 - `dictionary.md`: Dictionary entry generation guidelines
 - `linguistic_units.md`: Linguistic units generation guidelines
+- `stager.md`: Stage generator
 
 ## Combining Process
 
@@ -153,11 +154,15 @@ node tools/combine.js
 
 This will create or update all combined prompt files in the `combined/` directory.
 
-# Prompt Rules
+# Prompt Writing Principles
 
 1 - Prompts should be as short as possible, while still including all the necessary information.
 2 - No unnecessary styling elements should be used. Prompt will not be read by a human. 
 3 - They are written for all situations, not individual.
+4 - Dont use json blocks, json schemas already given the LLM's, prompts only describe that what fields filled with what etc.
+
+5 - No unnecessary bullet points. Use like : "a point, another point, third point etc"
+ 
 
 
 

@@ -7,7 +7,7 @@ void main(List<String> args) {
     exit(1);
   }
 
-  final dataLayers = {'user': 'user-data', 'admin': 'admin-data'};
+  final dataLayers = {'user': 'gql', 'admin': 'admin-data'};
 
   final dataLayer = args[0];
   final targetLayer = dataLayers[dataLayer];

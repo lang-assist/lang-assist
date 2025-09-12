@@ -1,1 +1,14 @@
-{}
+{
+    "dart.enabled": false,
+    "[dart]": {
+        "editor.suggestSelection": "recentlyUsedByPrefix",
+        "editor.suggest.snippetsPreventQuickSuggestions": false,
+        "editor.suggestOnTriggerCharacters": false,
+        "editor.completion.enabled": false
+    },
+    "dart.analysisExcludedFolders": [
+        "docs",
+        "tools",
+        "bin"
+    ]
+}

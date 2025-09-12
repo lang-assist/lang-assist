@@ -14,17 +14,22 @@
         "--disable-extension=ms-vscode.vscode-typescript-next",
         "--extensionDevelopmentPath=${workspaceRoot}/_extension"
       ],
-      "outFiles": ["${workspaceRoot}/_extension/dist/**/*.js"],
+      "outFiles": [
+        "${workspaceRoot}/_extension/dist/**/*.js"
+      ],
       "autoAttachChildProcesses": true,
       "preLaunchTask": "Watch for extension run"
     },
     {
       "name": "assist-app",
-      "cwd": "bin\\mobile",
-      "program": "lib\\main.dart",
+      "cwd": "bin/mobile",
+      "program": "lib/main.dart",
       "request": "launch",
       "type": "dart",
-      "args": ["--web-port", "8082"]
+      "args": [
+        "--web-port",
+        "8082"
+      ]
     },
     {
       "name": "assist-app (profile mode)",
